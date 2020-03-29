@@ -12,7 +12,7 @@ struct mean_op
 // Ex. mean_col_name = dfmean( df[colm_name] );
 constexpr auto dfmean(const data_frame_col& dc)
 {
-   return std::make_pair(dc.col_name, mean_op(dc.get_vector()));
+   return mean_op(dc.get_vector());
 }
  
 // function for calculating mean of whole data frame
